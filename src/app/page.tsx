@@ -89,6 +89,7 @@ export default function Home() {
           type="text"
           className="input input-bordered flex-grow"
           value={input}
+          disabled={typingMessage || loading ? true : false}
           onChange={(e) => handleInput(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Type your message..."
